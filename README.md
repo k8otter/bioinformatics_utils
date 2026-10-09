@@ -77,24 +77,26 @@ You can install other packages as needed with pip or conda forge
 
 To use:
 
+* Note: The notebook itself contains detailed information about parameters and output files
 * You will need to be in the correct python environment and setting up the kernel depends on the IDE you are using
-* Update the Imports \& Global Configuration block
+* Update the Imports \& Global Configuration block and run
 
   * pay special attention to: 
 
+    * Entrez.email
     * INPUT\_FASTA
     * HEADER\_TAXON\_RANK - useful if you want to have the order or family appended to the end of the header
     * DATASET\_ID - will label all of the files
     * PAPER\_ACCESSIONS\_CSV - expects a csv file with two columns "paper\_accession" and "source\_doi" 
     * BASE\_OUTPUT\_DIR
-* Run all helper functions
-* Run Preparation block
-* Run Pipeline Execution
-* If desired, run additional helper block at the end of the script to:
+  * Run the helper-definition cells down through \*\*SignalP 6 trimming\*\*. These define the functions used below.
+  * Run \*\*Preparation\*\* to create the metadata review CSV. Open it, fill unresolved entries, and save it before continuing.
+  * Run \*\*Pipeline Execution (main)\*\*. It rereads the saved review sheet and may ask you to choose duplicate records or supply missing species.
+  * Run optional analysis sections only when needed, after checking their paths and switches.
 
-  * filter by motif, domain, taxonomy, etc. by uncommenting the desired filtering
-  * InterPro Scan 
-  * Identify Dibasic cleavages 
+    * InterPro Scan
+    * Dibasic cleavage site identification
+    * Additional filtering by motifs, domains from InterPro, taxonomy 
 
 
 
