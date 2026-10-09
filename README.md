@@ -1,12 +1,9 @@
 # bioinformatics\_utils
-
 Note: these have all been tested and used on Windows devices only
 
+## Bash:
 
-
-### Bash:
-
-#### If you have a bunch of accession numbers for nucleotide sequences but want the corresponding protein accession numbers:
+### If you have a bunch of accession numbers for nucleotide sequences but want the corresponding protein accession numbers:
 
 **bulk\_get\_protein\_accession\_numbers\_from\_nucleotide\_accessions.sh**
 
@@ -19,9 +16,9 @@ To run:
 
 The output file can then be used on NCBI Batch Entrez <https://www.ncbi.nlm.nih.gov/sites/batchentrez> to make a fasta file containing all of those sequences. I suggest you run bulk\_replace\_nucleotide\_accessions\_with\_protein\_accessions.ps1  first to get a list of the accession numbers only because the output format will not work in Batch Entrez.
 
-### Cmd:
+## Cmd:
 
-#### If you are making a spreadsheet of the accession numbers (e.g. with species info or source dois) and want to replace the nucleotide sequences with the protein sequences:
+### If you are making a spreadsheet of the accession numbers (e.g. with species info or source dois) and want to replace the nucleotide sequences with the protein sequences:
 
 **bulk\_replace\_nucleotide\_accessions\_with\_protein\_accessions.ps1**
 
@@ -33,7 +30,7 @@ To run:
 * navigate to folder containing your inputs
 * `powershell -File "C:\\path\\to\\bulk\_replace\_nucleotide\_accessions\_with\_protein\_accessions.ps1"`
 
-### Python:
+## Python:
 
 You will need a python (Python 3.14.8) environment with the following installed:
 
@@ -47,9 +44,7 @@ To create a conda env: `conda create -n env\_name python=3.14.8 biopython=1.88`
 
 You can install other packages as needed with pip or conda forge
 
-#### 
-
-#### To prepare sequences for alignment and create metadata:
+### To prepare sequences for alignment and create metadata:
 
 **fasta\_cleaning\_pipeline\_updated.ipynb**
 
@@ -72,9 +67,9 @@ To use:
     * Dibasic cleavage site identification
     * Additional filtering by motifs, domains from InterPro, taxonomy 
 
-#### To design in-situ probes for HCR:
+### To design in-situ probes for HCR:
 
-#### If you have a nucleotide sequence that you just want the open reading frame for (this will also remove returns which you need for the HCR\_probe\_maker.ipynb):
+### If you have a nucleotide sequence that you just want the open reading frame for (this will also remove returns which you need for the HCR\_probe\_maker.ipynb):
 
 **crop\_fasta\_orfs.py**
 
@@ -90,7 +85,7 @@ To run:
 
 
 
-#### If you just want to remove the returns in preparation for the HCR\_probe\_maker.ipynb:
+### If you just want to remove the returns in preparation for the HCR\_probe\_maker.ipynb:
 
 **remove\_returns\_from\_fasta.py**
 
@@ -101,7 +96,7 @@ To run:
 * edit the output.fasta
 * click run
 
-##### To create probes for HCR:
+### To create probes for HCR:
 
 **HCR\_probe\_maker.ipynb**
 
