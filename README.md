@@ -74,7 +74,7 @@ To use:
 
 #### To design in-situ probes for HCR:
 
-##### If you have a nucleotide sequence that you just want the open reading frame for (this will also remove returns which you need for the HCR\_probe\_maker.ipynb):
+#### If you have a nucleotide sequence that you just want the open reading frame for (this will also remove returns which you need for the HCR\_probe\_maker.ipynb):
 
 **crop\_fasta\_orfs.py**
 
@@ -90,7 +90,7 @@ To run:
 
 
 
-##### If you just want to remove the returns in preparation for the HCR\_probe\_maker.ipynb:
+#### If you just want to remove the returns in preparation for the HCR\_probe\_maker.ipynb:
 
 **remove\_returns\_from\_fasta.py**
 
