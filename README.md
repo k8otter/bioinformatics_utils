@@ -67,7 +67,7 @@ To use:
     * Dibasic cleavage site identification
     * Additional filtering by motifs, domains from InterPro, taxonomy 
 
-### To design in-situ probes for HCR:
+## To design in-situ probes for HCR:
 
 ### If you have a nucleotide sequence that you just want the open reading frame for (this will also remove returns which you need for the HCR\_probe\_maker.ipynb):
 
